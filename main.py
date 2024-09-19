@@ -35,11 +35,11 @@ def main():
             thing.update(dt)
 
         for asteroid in asteroids:
-            if(player.collides(asteroid))
+            if(player.collides(asteroid)):
                 print("Game over!")
                 sys.exit()
             for bullet in shots:
-                if(bullet.collides(asteroid)) # concurrent list mod: pygame or python must handle somehow
+                if(bullet.collides(asteroid)): # concurrent list mod: pygame or python must handle somehow
                     asteroid.split()
                     bullet.kill()
 
